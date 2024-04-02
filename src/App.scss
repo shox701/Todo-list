@@ -1,0 +1,57 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+  background-color: azure;
+
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+input[type='text'] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #ff0000;
+  margin-left: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.add-btn{
+  background-color: purple;
+  width: 30px;
+  height: 30px;
+}
+.trash-btn{
+  margin-left: 154px;
+  
+}
+.items-container {
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: rgb(236, 236, 236);
+  width: auto;
+}
+
+.clear-all {
+  margin-top: 10px;
+}
+img{
+  width: 20px;
+  height: 20px;
+}
