@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
   background-color: azure;
+  height: auto;
 
 }
 
@@ -18,23 +18,31 @@ input[type='text'] {
   margin-right: 10px;
 }
 
-button {
+h2 {
+  text-align: left;
+}
+
+.add-btn {
+  background-color: rgb(177, 11, 177);
+  width: 30px;
+  height: 30px;
   padding: 5px 10px;
-  background-color: #ff0000;
+  background-color: #ea00ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.del-btn {
+  background-color: rgb(253, 24, 24);
+  border: 2px solid black;
+  padding: 5px 10px;
   margin-left: 20px;
   color: white;
   border: none;
   cursor: pointer;
 }
-.add-btn{
-  background-color: purple;
-  width: 30px;
-  height: 30px;
-}
-.trash-btn{
-  margin-left: 154px;
-  
-}
+
 .items-container {
   margin-bottom: 20px;
 }
@@ -43,15 +51,25 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   background-color: rgb(236, 236, 236);
-  width: auto;
+  padding: 0px 5px;
+  width: 100%;
+
 }
 
-.clear-all {
+.btn-clear {
+
   margin-top: 10px;
+  padding: 5px 10px;
+  background-color: rgb(177, 11, 177);
+  margin-left: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-img{
+
+img {
   width: 20px;
   height: 20px;
 }

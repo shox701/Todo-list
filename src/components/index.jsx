@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Trash from "../assets/trash.jpg"
+import Trash from "../assets/trash.png"
 
 function Apps() {
   const [inputValue, setInputValue] = useState('');
@@ -27,11 +27,12 @@ function Apps() {
   return (
     <div className="app">
     <div className="input-container">
+      <h2>Todo App</h2>
       <input
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        placeholder="Enter text..."
+        placeholder="Add your new todo"
       />
       <button className='add-btn' onClick={handleAddItem}>+</button>
     </div>
@@ -39,7 +40,7 @@ function Apps() {
       {items.map((item, index) => (
         <div key={index} className="item">
           <span>{item}</span>
-          <button className='' onClick={() => handleDeleteItem(index)}><img src={Trash} /></button>
+          <button className='del-btn' onClick={() => handleDeleteItem(index)}><img src={Trash} /></button>
         </div>
       ))}
     </div>
